@@ -467,7 +467,7 @@ footer {
     }
 }
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-width: 480px) {
     .projects {
         width: 300px;
         height: 2040px;
