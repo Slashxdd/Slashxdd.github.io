@@ -168,7 +168,7 @@ footer {
 }
 
 .order {
-    width: 50%;
+    width: 680px;
     height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -264,7 +264,7 @@ footer {
 }
 
 .order-form input {
-    width: 80%;
+    width: 445px;
     -webkit-appearance: none;
     margin-bottom: 10px;
     border: 0;
@@ -297,7 +297,7 @@ footer {
     cursor: pointer;
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
-    margin-top: 5%;
+    margin-top: 35px;
 }
 
 .button:hover {
@@ -376,7 +376,7 @@ footer {
 }
 
 .subcribe {
-    width: 40%;
+    width: 680px;
     margin: 0 auto;
     text-align: center;
     margin-top: -100px;
@@ -497,14 +497,6 @@ footer {
 
     .red {
         height: 2400px;
-    }
-
-    .blue {
-        height: 1070px;
-    }
-
-    .order-form {
-        height: 650px;
     }
 }
 
