@@ -465,6 +465,14 @@ footer {
     .red {
         height: 1380px;
     }
+
+    .order-form {
+        width: 480px;
+    }
+
+    .subcribe__input {
+        width: 480px;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -497,6 +505,14 @@ footer {
 
     .red {
         height: 2400px;
+    }
+
+    .order-form {
+        width: 320px;
+    }
+
+    .subcribe__input {
+        width: 320px;
     }
 }
 
