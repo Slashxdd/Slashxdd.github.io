@@ -50,7 +50,7 @@
         this.height = height;
         this.x = x;
         this.y = y;
-        this.speed = 4;
+        this.speed = 2;
       };
       Rect.prototype = {
         updatePosition:function(width, height) {
@@ -131,7 +131,7 @@
       console.log("rectangle", rectangles.length, "x:", x, "y:", y, "width:",width, "height:", height, "square:", square);
       rectangles.push(new Rect(x, y, width, height));
     }
-    }, 1000);
+    }, 5000);
 
     </script>
 
