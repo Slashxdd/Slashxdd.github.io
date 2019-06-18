@@ -1,0 +1,19 @@
+.thanks {
+    text-align: center;
+    overflow: auto;
+    margin: 195px 0 260px;
+  }
+  
+  .thanks__subhead {
+    margin-top: 30px;
+    line-height: 1.45;
+    font-family: "Georgia Italic", 'Times New Roman', Times, serif;
+    font-size: 24px;
+    color: #606060;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .banner {
+      margin: 40px 0 90px;
+    }
+  }

@@ -1,0 +1,85 @@
+@import url("main.css") all;
+
+.coats,
+.tshirts,
+.outerwear {
+    text-align: center;
+    padding: 0 32px;
+}
+
+.coats__item,
+.outerwear__item,
+.tshirts__item {
+    list-style: none;
+}
+
+.coats__item a,
+.outerwear__item a,
+.tshirts__item a {
+    text-decoration: none;
+    color: rgb(48, 48, 48);
+}
+
+.coats__item a:hover .coats__example,
+.outerwear__item a:hover .outerwear__example,
+.tshirts__item a:hover .tshirts__example {
+    opacity: 0.75;
+}
+
+#path {
+    display: block;
+    margin-left: 32px;
+    margin-top: 40px;
+}
+
+.coats__list,
+.outerwear__list,
+.tshirts__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.coats h2,
+.tshirts h2,
+.outerwear h2 {
+    margin-top: 82px;
+    margin-bottom: 82px;
+}
+
+.coats hr,
+.tshirts hr,
+.outerwear hr {
+    margin-top: 62px;
+}
+
+h4 {
+    font-family: "Georgia Italic";
+    font-size: 24px;
+    color: rgb(96, 96, 96);
+    text-align: center;   
+    margin-top: 46px;
+}
+
+.lookbook {
+    margin-top: 56px;
+}
+
+.coats__example,
+.outerwear__example,
+.tshirts__example {
+    width: 206px;
+    height: 254px;
+    border-width: 1px;
+    border-color: rgb(229, 229, 229);
+    border-style: solid;
+    opacity: 1;
+    transition: 0.3s linear;
+}
+
+.outwear__title,
+.coats__title,
+.tshirts__title {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+  

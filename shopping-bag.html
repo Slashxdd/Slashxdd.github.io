@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SH Shoping Bag</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/shoping-bag.css">
+</head>
+<body>
+    <div id="body-wrapper">
+        <header>
+            <div class="header-left-wrapper">
+                <a href="home.html">
+                    <div class="header__logo">SH</div>     
+                </a>
+                <nav>
+                    <ul class="header__menu">
+                        <li><a href="category-all.html?category=woman">Woman</a></li>
+                        <li><a href="category-all.html?category=men">Men</a></li>
+                        <li><a href="category-all.html?category=kids">Kids</a></li>
+                        <li><a href="category-all.html?category=woman">Comming Soon</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-right-wrapper">
+                <div class="header__search">
+                    <input type="text" name="search-text" id="search-input" placeholder="Search something...">
+                    <button role="search" id="search-button" onclick="startSearch()"></button>
+                </div>
+                <div class="header__basket">
+                    <a href="shopping-bag.html">
+                        <img src="img/basket-icon.svg" alt="basket">
+                        <span>Basket</span>
+                        (<span id="basket-count">0</span>)
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <hr>
+            <span id="path">HOME / </span>
+            
+            <section class="basket">
+                <div class="basket__title">
+                    <h1 class="basket__head">YOUR SHOPPING BAG</h1>
+                    <p class="basket__subhead">Items reserved for limited time only</p>
+                </div>
+                
+                <div class="basket__list">
+                    <table class="basket__table">
+                    <thead class="basket__table-head">
+                        <tr class="basket__table-row">
+                        <th class="basket__table-caption">PRODUCT</th>
+                        <th class="basket__table-caption">DESCRIPTION</th>
+                        <th class="basket__table-caption">COLOR</th>
+                        <th class="basket__table-caption">SIZE</th>
+                        <th class="basket__table-caption">QTY</th>
+                        <th class="basket__table-caption">AMOUNT</th>
+                        <th class="basket__table-caption">DELETE</th>
+                        </tr>
+                    </thead>
+                    <tbody class="basket__table-body">
+                    </tbody>
+                    <tfoot class="basket__table-footer">
+                        <tr class="basket__table-row">
+                        <td class="basket__table-bottom"></td>
+                        <td class="basket__table-bottom"></td>
+                        <td class="basket__table-bottom"></td>
+                        <td class="basket__table-bottom"></td>
+                        <td class="basket__table-bottom">Subtotal:</td>
+                        <td class="basket__table-bottom">
+                            <span class="basket__total-currency">$</span>
+                            <span class="basket__total-price"></span>
+                        </td>
+                        <td class="basket__table-bottom"></td>
+                        </tr>
+                    </tfoot>
+                    </table>
+                </div>
+                 
+                <button class="basket__order-button" onclick="makeOrder()">ORDER NOW</button>
+                <a href="home.html" class="basket__order-link">Continue Shopping</a>
+            </section>
+            </main>
+
+        <footer>
+            <div class="footer__collection">
+                <h3>Collection</h3>
+                <ul>
+                    <li><a href="category-all.html?category=woman">Woman</a></li>
+                    <li><a href="category-all.html?category=men">Men</a></li>
+                    <li><a href="category-all.html?category=kids">Kids</a></li>
+                    <li><a href="category-all.html?category=woman">Comming Soon</a></li>
+                </ul>
+            </div>
+            <div class="footer__site">
+                <h3>Site</h3>
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Copyright Policy</a></li>
+                    <li><a href="#">Press Kit</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>           
+            </div>
+            <div class="footer__shop">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Shipping Methods</a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>           
+            </div>
+            <div class="footer__social">
+                <h3>Social</h3>
+                <p>Shoper is made with love in Warsaw, 2014 © All rights reserved. El Passion</p>
+                <ul>
+                    <li>
+                        <a href="https://twitter.com">
+                            <img src="img/twitter.svg" alt="twitter">   
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://facebook.com">
+                            <img src="img/facebook.svg" alt="facebook">    
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com">
+                            <img src="img/instagram.svg" alt="instagram"> 
+                        </a>
+                    </li>
+                </ul>           
+            </div>
+        </footer>
+    </div>
+<script src="js/common.js"></script>
+<script src="js/catalog.js"></script>
+<script src="js/categories.js"></script>
+<script src="js/shopping-bag.js"></script>
+</body>
+</html>
+

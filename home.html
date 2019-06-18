@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SH Home</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <div id="body-wrapper">
+        <header>
+            <div class="header-left-wrapper">
+                <a href="home.html">
+                    <div class="header__logo">SH</div>     
+                </a>
+                <nav>
+                    <ul class="header__menu">
+                        <li><a href="category-all.html?category=woman">Woman</a></li>
+                        <li><a href="category-all.html?category=men">Men</a></li>
+                        <li><a href="category-all.html?category=kids">Kids</a></li>
+                        <li><a href="category-all.html?category=woman">Comming Soon</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-right-wrapper">
+                <div class="header__search">
+                    <input type="text" name="search-text" id="search-input" placeholder="Search something...">
+                    <button role="search" id="search-button" onclick="startSearch()"></button>
+                </div>
+                <div class="header__basket">
+                    <a href="shopping-bag.html">
+                        <img src="img/basket-icon.svg" alt="basket">
+                        <span>Basket</span>
+                        (<span id="basket-count">0</span>)
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <hr>
+            <section class="intro">
+                <h1 id="head">HAZY SHADE OF SPRING</h1>
+                <p id="subhead">Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo.</p>
+                <a id="head-link" href="category-all.html?category=woman">Check new arrivals</a>
+                <div class="products">
+                    <ul class="products__list">
+                        <li class="products__item">
+                            <a href="category-all.html?category=woman">
+                                <img src="img/home_1.jpg" alt="product category" width="100%" height="100%">
+                                <div></div>
+                            </a>
+                        </li>
+                        <li class="products__item">
+                            <a href="product-details.html?id=16">
+                                <img src="img/home_8.jpg" alt="product category" width="100%" height="100%">
+                                <h2>Elegant shoes</h2>
+                                <p>Braided leather</p>
+                            </a>
+                        </li>
+                        <li class="products__item">
+                            <a href="category-all.html?category=men">
+                                <img src="img/home_2.jpg" alt="product category" width="100%" height="100%">
+                            </a>
+                        </li>
+                        <li class="products__item">
+                            <a href="product-details.html?id=15">
+                                <img src="img/home_7.jpg" alt="product category" width="100%" height="100%">
+                                <h2>Elegant shoes</h2>
+                                <p>Braided leather</p>
+                            </a>
+                        </li>
+                        <li class="products__item">
+                            <a href="product-details.html?id=14">
+                                <img src="img/home_3.jpg" alt="product category" width="100%" height="100%">
+                                <h2>Elegant shoes</h2>
+                                <p>Braided leather</p>
+                            </a>
+                        </li>
+                        <li class="products__item">
+                            <a href="category-all.html?category=kids">
+                                <img src="img/home_6.jpg" alt="product category" width="100%" height="100%">
+                            </a>
+                        </li>
+                        <li class="products__item">
+                            <a href="product-details.html?id=13">
+                                <img src="img/home_4.jpg" alt="product category" width="100%" height="100%">
+                                <h2>Elegant shoes</h2>
+                                <p>Braided leather</p>
+                            </a>
+                        </li>
+                        <li class="products__item">
+                            <a href="product-details.html?id=12">
+                                <img src="img/home_5.jpg" alt="product category" width="100%" height="100%">
+                                <h2>Elegant shoes</h2>
+                                <p>Braided leather</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="signup">
+                <h2>SIGN UP TO RECEIVE OUR UPDATES</h2>
+                <p>Nulla ipsum dolor lacus, suscipit adipiscing. Cum sociis natoque penatibus et ultrices volutpat.</p>
+                <form class="signup__form">
+                    <input id="form-email" type="email" name="email" id="email" placeholder="Your e-mail" required>
+                    <input id="form-submit" type="submit" value="add">
+                </form>
+            </section>
+
+            <section class="lookbook">
+                <div class="lookbook__view">
+                  <button class="lookbook__control" id="arrow-left"></button>
+              
+                  <ul class="lookbook__menu">
+                    <li class="lookbook__menu-item">
+                        <a href="category-all.html?category=woman"><img src="img/man-outwear1.png" alt="200x120"  width="200" height="120"></a>
+                    </li>
+                    <li class="lookbook__menu-item">
+                        <a href="product-details.html?id=16"><img src="img/woman-coats4.png" alt="200x120" width="200" height="120"></a>
+                    </li>
+                    <li class="lookbook__menu-item">
+                        <a href="category-all.html?category=woman"><img src="img/man-outwear1.png" alt="200x120"  width="200" height="120"></a>
+                    </li>
+                    <li class="lookbook__menu-item">
+                        <a href="product-details.html?id=16"><img src="img/woman-coats4.png" alt="200x120"  width="200" height="120"></a>
+                    </li>
+                    <li class="lookbook__menu-item">
+                        <a href="category-all.html?category=woman"><img src="img/man-outwear1.png" alt="200x120"  width="200" height="120"></a>
+                    </li>
+                    <li class="lookbook__menu-item">
+                        <a href="product-details.html?id=16"><img src="img/woman-coats4.png" alt="200x120" width="200" height="120"></a>
+                    </li>
+                    <li class="lookbook__menu-item">
+                        <a href="category-all.html?category=woman"><img src="img/man-outwear1.png" alt="200x120" width="200" height="120"></a>
+                    </li>
+                  </ul>
+              
+                  <button class="lookbook__control"  id="arrow-right"></button>
+                </div>
+              </section>
+        </main>
+
+        <footer>
+            <div class="footer__collection">
+                <h3>Collection</h3>
+                <ul>
+                    <li><a href="category-all.html?category=woman">Woman</a></li>
+                    <li><a href="category-all.html?category=men">Men</a></li>
+                    <li><a href="category-all.html?category=kids">Kids</a></li>
+                    <li><a href="category-all.html?category=woman">Comming Soon</a></li>
+                </ul>
+            </div>
+            <div class="footer__site">
+                <h3>Site</h3>
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Copyright Policy</a></li>
+                    <li><a href="#">Press Kit</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>           
+            </div>
+            <div class="footer__shop">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Shipping Methods</a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>           
+            </div>
+            <div class="footer__social">
+                <h3>Social</h3>
+                <p>Shoper is made with love in Warsaw, 2014 © All rights reserved. El Passion</p>
+                <ul>
+                    <li>
+                        <a href="https://twitter.com">
+                            <img src="img/twitter.svg" alt="twitter">   
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://facebook.com">
+                            <img src="img/facebook.svg" alt="facebook">    
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com">
+                            <img src="img/instagram.svg" alt="instagram"> 
+                        </a>
+                    </li>
+                </ul>           
+            </div>
+        </footer>
+    </div>
+<script src="js/common.js"></script>
+<script src="js/shopping-bag.js"></script>
+</body>
+</html>
+

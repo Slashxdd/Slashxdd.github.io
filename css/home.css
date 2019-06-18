@@ -1,0 +1,203 @@
+@import url("main.css") all;
+
+.intro {
+    text-align: center;
+}
+
+#head {
+    margin-top: 130px;
+    margin-bottom: 0px;
+}
+
+#subhead {
+    font-family: "Georgia Italic";
+    font-size: 24px;
+    line-height: 1.45;
+    color: rgb(96, 96, 96);
+    margin-bottom: 68px;
+}
+
+#head-link {
+    display: block;
+    width: 230px;
+    height: 58px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+    text-decoration: none;
+    color: rgb(48, 48, 48);
+    font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 58px;
+    text-transform: uppercase;
+    border: 1px solid rgb(149, 149, 149);
+}
+
+#head-link:hover {
+    background-color: #e5e5e5;
+}
+
+.products {
+    width: 95.16%;
+    height: 480px;
+    margin: 0 auto;
+    margin-bottom: 135px;
+}
+
+.products__item {
+    position: relative;
+    list-style: none;
+    width: 25%;
+    height: 50%;
+    background-color: black;
+}
+
+.products__item a {
+    text-decoration: none;
+}
+
+.products__list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products__item h2,
+.products__item p {
+    position: absolute;
+    left: 0;
+    right: 0;
+    overflow: auto;
+    color: white;
+}
+
+.products__item h2 {
+    top: 40%;
+}
+
+.products__item p {
+    font-family: "Georgia Italic";
+    text-transform: uppercase;
+    font-size: 18px;
+    bottom: 32%;
+}
+
+.products__item a:hover {
+    opacity: 0.65;
+}
+
+.signup {
+    text-align: center;
+}
+
+.signup p {
+    font-family: "Georgia Italic";
+    font-size: 18px;
+    line-height: 1.944;
+    color: rgb(96, 96, 96);
+    margin-bottom: 54px;
+    width: 95.16%;
+}
+
+.signup form {
+    position: relative;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+#form-email {
+    display: block;
+    font-family: "Lato Italic";
+    font-size: 11px;
+    width: 50%;
+    height: 54px;
+    border-width: 1px;
+    border-color: rgb(149, 149, 149);
+    border-style: solid;
+    padding-left: 10px;
+    border-right: none;
+}
+
+#form-submit {
+    display: block;
+    width: 94px;
+    height: 54px;
+    background-color: #f68236;
+    border: none;
+    font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+}
+
+#form-submit:hover {
+    background-color: #e67429;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .products__item h2 {
+        top: 25%;
+    }
+
+    .products__item p {
+        bottom: 28%;
+    }
+
+}
+
+@media only screen and (max-width: 1023px) {
+
+    #head-link {
+        display: none;
+    }
+
+    .products__list {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .products {
+        width: 65%;
+        height: 1800px;
+    }
+
+    .products__item {
+        width: 100%;
+        height: 12.5%;
+    }
+
+    .products__item h2 {
+        top: 33%;
+    }
+
+    .products__item p {
+        bottom: 33%;
+    }
+
+}
+
+
+@media only screen and (max-width: 767px) {
+
+    #form-email {
+      width: 71%;
+    }
+
+    .products {
+        width: 93%;
+    }
+  
+  }
+
+
+
+
+
+
+
+
+  
+

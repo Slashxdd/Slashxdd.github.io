@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SH Categories</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/category-all.css">
+</head>
+<body>
+    <div id="body-wrapper">
+        <header>
+            <div class="header-left-wrapper">
+                <a href="home.html">
+                    <div class="header__logo">SH</div>     
+                </a>
+                <nav>
+                    <ul class="header__menu">
+                        <li><a href="category-all.html?category=woman">Woman</a></li>
+                        <li><a href="category-all.html?category=men">Men</a></li>
+                        <li><a href="category-all.html?category=kids">Kids</a></li>
+                        <li><a href="category-all.html?category=woman">Comming Soon</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-right-wrapper">
+                <div class="header__search">
+                    <input type="text" name="search-text" id="search-input" placeholder="Search something...">
+                    <button role="search" id="search-button" onclick="startSearch()"></button>
+                </div>
+                <div class="header__basket">
+                    <a href="shopping-bag.html">
+                        <img src="img/basket-icon.svg" alt="basket">
+                        <span>Basket</span>
+                        (<span id="basket-count">0</span>)
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <hr>
+            <span id="path">HOME / </span>
+                
+            <section class="coats">
+                <h2>Coats</h2>
+                <ul class="coats__list">
+                    <li class="coats__item">
+                        <a href="">
+                            <div class="coats__example">
+                                <img src="" alt="" width="95%" height="95%">
+                            </div>
+                            <h3 class="coats__title">Man-coats 1</h3>
+                            <span class="coats__price">100 $</span>
+                        </a>
+                    </li>
+                    <li class="coats__item">
+                        <a href="">
+                            <div class="coats__example">
+                                <img src="" alt="" width="126" height="252">
+                            </div>
+                            <h3 class="coats__title">Man-coats 2</h3>
+                            <span class="coats__price">200 $</span>
+                        </a>
+                    </li>
+                    <li class="coats__item">
+                        <a href="">
+                            <div class="coats__example">
+                                <img src="" alt="" width="204" height="206">
+                            </div>
+                            <h3 class="coats__title">Man-coats 3</h3>
+                            <span class="coats__price">300 $</span>
+                        </a>
+                    </li>
+                    <li class="coats__item">
+                        <a href="">
+                            <div class="coats__example">
+                                <img src="" alt="" width="198" height="252">
+                            </div>
+                            <h3 class="coats__title">Man-coats 4</h3>
+                            <span class="coats__price">400 $</span>
+                        </a>
+                    </li>
+                </ul>
+                <hr>
+            </section>
+            <section class="outerwear">
+                <h2>Outerwear</h2>
+                <ul class="outerwear__list">
+                    <li class="outerwear__item">
+                        <a href="">
+                            <div class="outerwear__example">
+                                <img src="" alt="" width="95%" height="95%">
+                            </div>
+                            <h3 class="outwear__title">Man-outwear 1</h3>
+                            <span class="outwear__price">100 $</span>
+                        </a>
+                    </li>
+                    <li class="outerwear__item">
+                        <a href="">
+                            <div class="outerwear__example">
+                                <img src="" alt="" width="126" height="252">
+                            </div>
+                            <h3 class="outwear__title">Man-outwear 2</h3>
+                            <span class="outwear__price">200 $</span>
+                        </a>
+                    </li>
+                    <li class="outerwear__item">
+                        <a href="">
+                            <div class="outerwear__example">
+                                <img src="" alt="" width="204" height="206">
+                            </div>
+                            <h3 class="outwear__title">Man-outwear 3</h3>
+                            <span class="outwear__price">300 $</span>
+                        </a>
+                    </li>
+                    <li class="outerwear__item">
+                        <a href="">
+                            <div class="outerwear__example">
+                                <img src="" alt="" width="198" height="252">
+                            </div>
+                            <h3 class="outwear__title">Man-outwear 4</h3>
+                            <span class="outwear__price">400 $</span>
+                        </a>
+                    </li>
+                </ul>
+                <hr>
+            </section>
+            <section class="tshirts">
+                <h2>T-shirts</h2>
+                <ul class="tshirts__list">
+                    <li class="tshirts__item">
+                        <a href="">
+                            <div class="tshirts__example">
+                                <img src="" alt="" width="95%" height="95%">
+                            </div>
+                            <h3 class="tshirts__title">Man-tshirts 1</h3>
+                            <span class="tshirts__price">100 $</span>
+                        </a>
+                    </li>
+                    <li class="tshirts__item">
+                        <a href="">
+                            <div class="tshirts__example">
+                                <img src="" alt="" width="126" height="252">
+                            </div>
+                            <h3 class="tshirts__title">Man-tshirts 2</h3>
+                            <span class="tshirts__price">200 $</span>
+                        </a>
+                    </li>
+                    <li class="tshirts__item">
+                        <a href="">
+                            <div class="tshirts__example">
+                                <img src="" alt="" width="204" height="206">
+                            </div>
+                            <h3 class="tshirts__title">Man-tshirts 3</h3>
+                            <span class="tshirts__price">300 $</span>
+                        </a>
+                    </li>
+                    <li class="tshirts__item">
+                        <a href="">
+                            <div class="tshirts__example">
+                                <img src="" alt="" width="198" height="252">
+                            </div>
+                            <h3 class="tshirts__title">Man-tshirts 4</h3>
+                            <span class="tshirts__price">400 $</span>
+                        </a>
+                    </li>
+                </ul>
+                <hr>
+            </section>
+            
+            <h4>Check our lookbook</h4>
+            <section class="lookbook">
+                <div class="lookbook__view">
+                  <button class="lookbook__control" id="arrow-left"></button>
+              
+                  <ul class="lookbook__menu">
+                    <li class="lookbook__menu-item">
+                        <a href="category-all.html?category=woman"><img src="img/man-outwear1.png" alt="200x120"  width="200" height="120"></a>
+                    </li>
+                    <li class="lookbook__menu-item">
+                        <a href="product-details.html?id=16"><img src="img/woman-coats4.png" alt="200x120" width="200" height="120"></a>
+                    </li>
+                    <li class="lookbook__menu-item">
+                        <a href="category-all.html?category=woman"><img src="img/man-outwear1.png" alt="200x120"  width="200" height="120"></a>
+                    </li>
+                    <li class="lookbook__menu-item">
+                        <a href="product-details.html?id=16"><img src="img/woman-coats4.png" alt="200x120"  width="200" height="120"></a>
+                    </li>
+                    <li class="lookbook__menu-item">
+                        <a href="category-all.html?category=woman"><img src="img/man-outwear1.png" alt="200x120"  width="200" height="120"></a>
+                    </li>
+                    <li class="lookbook__menu-item">
+                        <a href="product-details.html?id=16"><img src="img/woman-coats4.png" alt="200x120" width="200" height="120"></a>
+                    </li>
+                    <li class="lookbook__menu-item">
+                        <a href="category-all.html?category=woman"><img src="img/man-outwear1.png" alt="200x120" width="200" height="120"></a>
+                    </li>
+                  </ul>
+              
+                  <button class="lookbook__control"  id="arrow-right"></button>
+                </div>
+              </section>
+            </main>
+
+        <footer>
+            <div class="footer__collection">
+                <h3>Collection</h3>
+                <ul>
+                    <li><a href="category-all.html?category=woman">Woman</a></li>
+                    <li><a href="category-all.html?category=men">Men</a></li>
+                    <li><a href="category-all.html?category=kids">Kids</a></li>
+                    <li><a href="category-all.html?category=woman">Comming Soon</a></li>
+                </ul>
+            </div>
+            <div class="footer__site">
+                <h3>Site</h3>
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Copyright Policy</a></li>
+                    <li><a href="#">Press Kit</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>           
+            </div>
+            <div class="footer__shop">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Shipping Methods</a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>           
+            </div>
+            <div class="footer__social">
+                <h3>Social</h3>
+                <p>Shoper is made with love in Warsaw, 2014 © All rights reserved. El Passion</p>
+                <ul>
+                    <li>
+                        <a href="https://twitter.com">
+                            <img src="img/twitter.svg" alt="twitter">   
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://facebook.com">
+                            <img src="img/facebook.svg" alt="facebook">    
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com">
+                            <img src="img/instagram.svg" alt="instagram"> 
+                        </a>
+                    </li>
+                </ul>           
+            </div>
+        </footer>
+    </div>
+<script src="js/common.js"></script>
+<script src="js/catalog.js"></script>
+<script src="js/categories.js"></script>
+<script src="js/shopping-bag.js"></script>
+</body>
+</html>
+
