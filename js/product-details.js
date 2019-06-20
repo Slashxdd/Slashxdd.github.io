@@ -1,8 +1,41 @@
 "use sctrict";
 
-var url_string = window.location.href; 
-var url = new URL(url_string);
-var paramValue = url.searchParams.get("id");
+/* for getting parametrs value from get query in url */
+var paramValue;
+
+if (document.documentMode || /Edge/.test(navigator.userAgent)) {
+    var query = window.location.search.substring(1);
+    qs = parse_query_string(query);
+    paramValue = qs.id;
+} else {
+    var url_string = window.location.href; 
+    var url = new URL(url_string);
+    paramValue = url.searchParams.get("id");
+}
+
+function parse_query_string(query) {
+    var vars = query.split("&");
+    var query_string = {};
+    for (var i = 0; i < vars.length; i++) {
+      var pair = vars[i].split("=");
+      var key = decodeURIComponent(pair[0]);
+      var value = decodeURIComponent(pair[1]);
+      // If first entry with this name
+      if (typeof query_string[key] === "undefined") {
+        query_string[key] = decodeURIComponent(value);
+        // If second entry with this name
+    } else if (typeof query_string[key] === "string") {
+        var arr = [query_string[key], decodeURIComponent(value)];
+        query_string[key] = arr;
+        // If third or later entry with this name
+    } else {
+        query_string[key].push(decodeURIComponent(value));
+    }
+    }
+    return query_string;
+}
+
+/* radio buttons */
 
 var productPhotos = document.getElementsByClassName("product__photos-item");
 var productName = document.getElementById("product-name");
@@ -37,6 +70,8 @@ function checkRadio(value) {
         toCart.dataset.size = value;
     }
 }
+
+/* photo switcher implemention */
 
 for (let i = 0; i < catalog.length; i++) {
     if (catalog[i].id.toString() === paramValue) {

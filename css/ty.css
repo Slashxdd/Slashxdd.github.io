@@ -1,19 +1,36 @@
 .thanks {
-    text-align: center;
-    overflow: auto;
-    margin: 195px 0 260px;
-  }
+  text-align: center;
+  overflow: auto;
+  margin: 195px 0 260px;
+}
   
-  .thanks__subhead {
-    margin-top: 30px;
-    line-height: 1.45;
-    font-family: "Georgia Italic", 'Times New Roman', Times, serif;
-    font-size: 24px;
-    color: #606060;
-  }
+.thanks__subhead {
+  margin-top: 30px;
+  line-height: 1.45;
+  font-family: "Georgia Italic", 'Times New Roman', Times, serif;
+  font-size: 24px;
+  color: #606060;
+}
   
-  @media only screen and (max-width: 768px) {
-    .banner {
-      margin: 40px 0 90px;
-    }
+@media only screen and (max-width: 1023px) {
+
+  .thanks {
+    margin: 40px 0 90px;
+    padding-top: 100px;
   }
+
+  main::after {
+    content: "";
+    display: block;
+    background: #eaeaea;
+    height: 1px;
+    border: none;
+    width: 95.16%;
+    margin: 0 auto;
+  }
+
+  footer {
+    padding-top: 62px;
+  }
+
+}

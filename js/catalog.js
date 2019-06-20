@@ -1,3 +1,4 @@
+/* global variable catalog */
 window.catalog = [
     {
         id: 1,

@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SH Home</title>
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <div id="body-wrapper">
@@ -27,7 +27,7 @@
             <div class="header-right-wrapper">
                 <div class="header__search">
                     <input type="text" name="search-text" id="search-input" placeholder="Search something...">
-                    <button role="search" id="search-button" onclick="startSearch()"></button>
+                    <button id="search-button" onclick="startSearch()"></button>
                 </div>
                 <div class="header__basket">
                     <a href="shopping-bag.html">
@@ -40,7 +40,7 @@
         </header>
 
         <main>
-            <hr>
+            <hr id="headerHr">
             <section class="intro">
                 <h1 id="head">HAZY SHADE OF SPRING</h1>
                 <p id="subhead">Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo.</p>
@@ -49,51 +49,51 @@
                     <ul class="products__list">
                         <li class="products__item">
                             <a href="category-all.html?category=woman">
-                                <img src="img/home_1.jpg" alt="product category" width="100%" height="100%">
+                                <img src="img/home_1.jpg" alt="product category">
                                 <div></div>
                             </a>
                         </li>
                         <li class="products__item">
                             <a href="product-details.html?id=16">
-                                <img src="img/home_8.jpg" alt="product category" width="100%" height="100%">
+                                <img src="img/home_8.jpg" alt="product category">
                                 <h2>Elegant shoes</h2>
                                 <p>Braided leather</p>
                             </a>
                         </li>
                         <li class="products__item">
                             <a href="category-all.html?category=men">
-                                <img src="img/home_2.jpg" alt="product category" width="100%" height="100%">
+                                <img src="img/home_2.jpg" alt="product category">
                             </a>
                         </li>
                         <li class="products__item">
                             <a href="product-details.html?id=15">
-                                <img src="img/home_7.jpg" alt="product category" width="100%" height="100%">
+                                <img src="img/home_7.jpg" alt="product category">
                                 <h2>Elegant shoes</h2>
                                 <p>Braided leather</p>
                             </a>
                         </li>
                         <li class="products__item">
                             <a href="product-details.html?id=14">
-                                <img src="img/home_3.jpg" alt="product category" width="100%" height="100%">
+                                <img src="img/home_3.jpg" alt="product category">
                                 <h2>Elegant shoes</h2>
                                 <p>Braided leather</p>
                             </a>
                         </li>
                         <li class="products__item">
                             <a href="category-all.html?category=kids">
-                                <img src="img/home_6.jpg" alt="product category" width="100%" height="100%">
+                                <img src="img/home_6.jpg" alt="product category">
                             </a>
                         </li>
                         <li class="products__item">
                             <a href="product-details.html?id=13">
-                                <img src="img/home_4.jpg" alt="product category" width="100%" height="100%">
+                                <img src="img/home_4.jpg" alt="product category">
                                 <h2>Elegant shoes</h2>
                                 <p>Braided leather</p>
                             </a>
                         </li>
                         <li class="products__item">
                             <a href="product-details.html?id=12">
-                                <img src="img/home_5.jpg" alt="product category" width="100%" height="100%">
+                                <img src="img/home_5.jpg" alt="product category">
                                 <h2>Elegant shoes</h2>
                                 <p>Braided leather</p>
                             </a>
@@ -106,7 +106,7 @@
                 <h2>SIGN UP TO RECEIVE OUR UPDATES</h2>
                 <p>Nulla ipsum dolor lacus, suscipit adipiscing. Cum sociis natoque penatibus et ultrices volutpat.</p>
                 <form class="signup__form">
-                    <input id="form-email" type="email" name="email" id="email" placeholder="Your e-mail" required>
+                    <input id="form-email" type="email" name="email" placeholder="Your e-mail" required>
                     <input id="form-submit" type="submit" value="add">
                 </form>
             </section>

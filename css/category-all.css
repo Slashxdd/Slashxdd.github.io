@@ -1,10 +1,8 @@
-@import url("main.css") all;
-
 .coats,
 .tshirts,
 .outerwear {
     text-align: center;
-    padding: 0 32px;
+    padding: 0 2.42%;
 }
 
 .coats__item,
@@ -26,6 +24,13 @@
     opacity: 0.75;
 }
 
+.coats__example img,
+.outerwear__example img,
+.tshirts__example img {
+    width: 95%;
+    height: 95%;
+}
+
 #path {
     display: block;
     margin-left: 32px;
@@ -42,7 +47,7 @@
 .coats h2,
 .tshirts h2,
 .outerwear h2 {
-    margin-top: 82px;
+    margin-top: 60px;
     margin-bottom: 82px;
 }
 
@@ -82,4 +87,84 @@ h4 {
     margin-top: 15px;
     margin-bottom: 5px;
 }
+
+/*
+.......##..............##.....##.########.########..####....###.......................##
+......##...##...##.....###...###.##.......##.....##..##....##.##.......##...##.......##.
+.....##.....##.##......####.####.##.......##.....##..##...##...##.......##.##.......##..
+....##....#########....##.###.##.######...##.....##..##..##.....##....#########....##...
+...##.......##.##......##.....##.##.......##.....##..##..#########......##.##.....##....
+..##.......##...##.....##.....##.##.......##.....##..##..##.....##.....##...##...##.....
+.##....................##.....##.########.########..####.##.....##..............##......
+*/
   
+@media only screen and (max-width: 1023px) {
+
+    .coats__list,
+    .outerwear__list,
+    .tshirts__list {
+        flex-wrap: wrap;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .coats__item,
+    .outerwear__item,
+    .tshirts__item {
+        flex-basis: 50%;
+        margin-bottom: 20px;
+    }
+
+    .coats__example,
+    .outerwear__example,
+    .tshirts__example {
+        margin: 0 auto;
+    }
+
+    #path {
+        display: block;
+        text-align: center;
+        padding-top: 200px;
+        width: 95.14%;
+        margin: 0 auto;
+    }
+
+    .coats hr,
+    .outerwear hr {
+        width: 70%;
+    }
+
+    .lookbook {
+        display: none;
+    }
+
+    h4 {
+        display: none;
+    }
+
+    .footer__social {
+        margin-top: 40px;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+    
+    .coats__list,
+    .outerwear__list,
+    .tshirts__list {
+        width: 100%;
+    }
+    
+    .coats hr,
+    .outerwear hr {
+        width: 95.14%;
+    }
+
+    .coats__example,
+    .outerwear__example,
+    .tshirts__example {
+        width: 168px;
+    }
+
+}
